@@ -10,12 +10,12 @@ function Footer() {
           <span>enquiries@cloud9holidays.com</span>
           <ul className="list">
             <li>
-              <a href="">
+              <a href="!#">
                 Contact us<i className="fa-solid fa-chevron-right"></i>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="!#">
                 Make a reservation<i className="fa-solid fa-chevron-right"></i>
               </a>
             </li>
@@ -25,31 +25,31 @@ function Footer() {
           <h2>paradise beach</h2>
           <ul className="list">
             <li>
-              <a href="">Welcome</a>
+              <a href="!#">Welcome</a>
             </li>
             <li>
-              <a href="">Reservations</a>
+              <a href="!#">Reservations</a>
             </li>
             <li>
-              <a href="">Accommodation</a>
+              <a href="!#">Accommodation</a>
             </li>
             <li>
-              <a href="">Things To Do</a>
+              <a href="!#">Things To Do</a>
             </li>
             <li>
-              <a href="">Location</a>
+              <a href="!#">Location</a>
             </li>
             <li>
-              <a href="">Rates</a>
+              <a href="!#">Rates</a>
             </li>
             <li>
-              <a href="">Contact Us</a>
+              <a href="!#">Contact Us</a>
             </li>
             <li>
-              <a href="">Gallery</a>
+              <a href="!#">Gallery</a>
             </li>
             <li>
-              <a href="">Feedback</a>
+              <a href="!#">Feedback</a>
             </li>
           </ul>
         </div>
@@ -57,25 +57,25 @@ function Footer() {
           <h2>Cloud 9 Holidays</h2>
           <ul className="list">
             <li>
-              <a href="">Offers</a>
+              <a href="!#">Offers</a>
             </li>
             <li>
-              <a href="">Gallery</a>
+              <a href="!#">Gallery</a>
             </li>
             <li>
-              <a href="">About Us</a>
+              <a href="!#">About Us</a>
             </li>
             <li>
-              <a href="">Careers</a>
+              <a href="!#">Careers</a>
             </li>
             <li>
-              <a href="">Contact Us</a>
+              <a href="!#">Contact Us</a>
             </li>
             <li>
-              <a href="">Cookie Policy</a>
+              <a href="!#">Cookie Policy</a>
             </li>
             <li>
-              <a href="">Privacy Policy</a>
+              <a href="!#">Privacy Policy</a>
             </li>
           </ul>
         </div>

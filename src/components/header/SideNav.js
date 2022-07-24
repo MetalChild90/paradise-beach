@@ -21,25 +21,25 @@ function SideNav({ showSideNav, closeSidenav }) {
         <div className="list-container">
           <ul className="list">
             <li>
-              <a href="">The Island</a>
+              <a href="!#">The Island</a>
             </li>
             <li>
-              <a href="">Accommodation</a>
+              <a href="!#">Accommodation</a>
             </li>
             <li>
-              <a href="">Things To Do</a>
+              <a href="!#">Things To Do</a>
             </li>
             <li>
-              <a href="">Location</a>
+              <a href="!#">Location</a>
             </li>
             <li>
-              <a href="">Rates</a>
+              <a href="!#">Rates</a>
             </li>
             <li>
-              <a href="">Offers</a>
+              <a href="!#">Offers</a>
             </li>
             <li>
-              <a href="">Contact Us</a>
+              <a href="!#">Contact Us</a>
             </li>
           </ul>
         </div>

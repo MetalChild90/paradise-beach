@@ -6,7 +6,7 @@ function TopNav({ isScrolled }) {
     <div className={`TopNav ${isScrolled && "scrolled"}`}>
       <MenuIcon isScrolled={isScrolled} />
       <h1 className={`title ${isScrolled && "scrolled"}`}>Paradise Beach</h1>
-      <a className="book-btn" href="">
+      <a className="book-btn" href="!#">
         book now
       </a>
     </div>

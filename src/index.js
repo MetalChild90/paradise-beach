@@ -14,4 +14,4 @@ setTimeout(() => {
       <App hideLoader={hideLoader} />
     </React.StrictMode>
   );
-}, 4000);
+}, 7000);

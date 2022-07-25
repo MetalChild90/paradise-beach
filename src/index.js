@@ -8,8 +8,10 @@ const loader = document.querySelector(".loader");
 
 const hideLoader = () => loader.classList.add("loader--hide");
 
-root.render(
-  <React.StrictMode>
-    <App hideLoader={hideLoader} />
-  </React.StrictMode>
-);
+setTimeout(() => {
+  root.render(
+    <React.StrictMode>
+      <App hideLoader={hideLoader} />
+    </React.StrictMode>
+  );
+}, 4000);

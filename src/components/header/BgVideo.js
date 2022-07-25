@@ -1,9 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import video from "../../assets/video.mp4";
 import islandImage from "../../assets/klifs.png";
 // Video by Mikhail Nilov: https://www.pexels.com/video/drone-footage-of-rock-formations-in-the-shore-8357346/
 
-export default function BgVideo({ hideLoader }) {
+export default function BgVideo() {
   const [activePlay, setActivePlay] = useState(true);
 
   const vidRef = useRef(null);
@@ -28,13 +28,13 @@ export default function BgVideo({ hideLoader }) {
   return (
     <div className="BgVideo">
       <video
+        id="video"
         className="video"
         autoPlay
         loop
         playsInline
         muted
         ref={vidRef}
-        onLoadedData={() => hideLoader()}
       >
         <source src={video} type="video/ogg" />
       </video>
@@ -44,7 +44,11 @@ export default function BgVideo({ hideLoader }) {
         </button>
       </div>
       <div>
-        <img className="video-replacement" src={islandImage} alt="" />
+        <img
+          className="video-replacement"
+          src={islandImage}
+          alt="island's kliffs view"
+        />
       </div>
     </div>
   );

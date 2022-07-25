@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import BgVideo from "../components/header/BgVideo";
 import TopNav from "../components/header/TopNav";
 import $ from "jquery";
 
-function Header({ fsOffset, isScrolled, hideLoader }) {
+function Header({ fsOffset, isScrolled }) {
   function transition() {
     $("html, body").animate(
       {
@@ -16,7 +16,7 @@ function Header({ fsOffset, isScrolled, hideLoader }) {
   return (
     <div className="Header">
       <TopNav isScrolled={isScrolled} />
-      <BgVideo hideLoader={hideLoader} />
+      <BgVideo />
       <span className="go-down" onClick={transition}>
         <i className="fa-solid fa-chevron-down"></i>
       </span>

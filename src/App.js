@@ -11,6 +11,8 @@ function App({ hideLoader }) {
   const [firstSectionOffset, setFirstSectionOffset] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(hideLoader, []);
+
   function handleOffset(offset) {
     setFirstSectionOffset(offset);
   }
@@ -34,11 +36,7 @@ function App({ hideLoader }) {
 
   return (
     <div className="App">
-      <Header
-        hideLoader={hideLoader}
-        fsOffset={firstSectionOffset}
-        isScrolled={isScrolled}
-      />
+      <Header fsOffset={firstSectionOffset} isScrolled={isScrolled} />
       <FirstSection handleOffset={handleOffset} isScrolled={isScrolled} />
       <SecondSection />
       <ThirdSection />

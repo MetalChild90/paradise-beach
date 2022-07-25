@@ -3,7 +3,7 @@ import video from "../../assets/video.mp4";
 import islandImage from "../../assets/klifs.png";
 // Video by Mikhail Nilov: https://www.pexels.com/video/drone-footage-of-rock-formations-in-the-shore-8357346/
 
-export default function BgVideo() {
+export default function BgVideo({ hideLoader }) {
   const [activePlay, setActivePlay] = useState(true);
 
   const vidRef = useRef(null);
@@ -27,7 +27,15 @@ export default function BgVideo() {
 
   return (
     <div className="BgVideo">
-      <video className="video" autoPlay loop playsInline muted ref={vidRef}>
+      <video
+        className="video"
+        autoPlay
+        loop
+        playsInline
+        muted
+        ref={vidRef}
+        onLoadedData={() => hideLoader()}
+      >
         <source src={video} type="video/ogg" />
       </video>
       <div onClick={handlePlayButton} className="videoOverlay">

@@ -7,9 +7,11 @@ import ThirdSection from "./sections/ThirdSection";
 import Socials from "./sections/Socials";
 import Footer from "./sections/Footer";
 
-function App() {
+function App({ hideLoader }) {
   const [firstSectionOffset, setFirstSectionOffset] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(hideLoader, []);
 
   function handleOffset(offset) {
     setFirstSectionOffset(offset);
@@ -27,7 +29,6 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    console.log(isScrolled);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

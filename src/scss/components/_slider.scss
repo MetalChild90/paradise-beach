@@ -10,6 +10,10 @@
 
     margin-bottom: 50px;
 
+    @media (orientation: landscape) and (max-width: 900px) {
+      height: 80vh;
+    }
+
     @media (min-width: 1200px) {
       width: 40vw;
     }

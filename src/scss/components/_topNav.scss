@@ -37,6 +37,10 @@
     transition: 1s;
     z-index: 2;
 
+    @media (orientation: landscape) and (max-width: 900px) {
+      top: 5vh;
+    }
+
     @media (min-width: 768px) {
       display: block;
 

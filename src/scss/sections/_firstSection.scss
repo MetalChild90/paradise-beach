@@ -3,10 +3,18 @@
 
   height: 100vh;
 
+  @media (orientation: landscape) and (max-width: 900px) {
+    height: 150vh;
+  }
+
   background-image: url("../../assets/island-1.jpg");
 
   & .overlay {
     height: 100vh;
+
+    @media (orientation: landscape) and (max-width: 900px) {
+      height: 150vh;
+    }
 
     background-color: rgba(167, 221, 216, 0.473);
 
@@ -27,6 +35,10 @@
       transform: translate(-50%, -50%);
       border-radius: $brr;
       transition: 1s;
+
+      @media (orientation: landscape) and (max-width: 900px) {
+        margin-top: 25vh;
+      }
 
       @media (min-width: 1200px) {
         top: 100vh;

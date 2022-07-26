@@ -3,7 +3,6 @@
   top: 0;
   left: -350px;
 
-  height: 70vh;
   width: 350px;
 
   font-size: 20px;
@@ -75,13 +74,17 @@
     & .list li {
       display: block;
 
-      margin-bottom: 15px;
+      margin-bottom: 20px;
 
       @media (min-width: 1200px) {
         &:hover {
           opacity: 0.8;
         }
       }
+    }
+
+    & .list li:nth-last-child(1) {
+      margin-bottom: 40px;
     }
   }
 

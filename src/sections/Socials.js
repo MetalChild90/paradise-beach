@@ -5,7 +5,7 @@ const actionNames = [
   { text: "Subscribe", icon: "envelope" },
 ];
 
-function Socials() {
+const Socials = () => {
   return (
     <section className="Socials">
       <div className="group">

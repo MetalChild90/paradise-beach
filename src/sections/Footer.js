@@ -1,26 +1,33 @@
 import logo from "../assets/cloud9.png";
+import FooterList from "../components/FooterList";
 
-const menuList1 = [
-  "Welcome",
-  "Reservations",
-  "Accommodation",
-  "Things To Do",
-  "Location",
-  "Rates",
-  "Contact Us",
-  "Galler",
-  "Feedback",
-];
+const menuList1 = {
+  title: "paradise beach",
+  features: [
+    "Welcome",
+    "Reservations",
+    "Accommodation",
+    "Things To Do",
+    "Location",
+    "Rates",
+    "Contact Us",
+    "Galler",
+    "Feedback",
+  ],
+};
 
-const menuList2 = [
-  "Offers",
-  "Gallery",
-  "About Us",
-  "Careers",
-  "Contact Us",
-  "Cookie Policy",
-  "Privacy Policy",
-];
+const menuList2 = {
+  title: "Cloud 9 Holidays",
+  features: [
+    "Offers",
+    "Gallery",
+    "About Us",
+    "Careers",
+    "Contact Us",
+    "Cookie Policy",
+    "Privacy Policy",
+  ],
+};
 
 function Footer() {
   return (
@@ -42,26 +49,8 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="column">
-          <h2>paradise beach</h2>
-          <ul className="list">
-            {menuList1.map((item, i) => (
-              <li key={i}>
-                <a href="!#">{item}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="column">
-          <h2>Cloud 9 Holidays</h2>
-          <ul className="list">
-            {menuList2.map((item, i) => (
-              <li key={i}>
-                <a href="!#">{item}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <FooterList menuList={menuList1} />
+        <FooterList menuList={menuList2} />
       </div>
       <div className="bottom">
         <p>{new Date().getFullYear()} &copy; Cloud 9 Holidays</p>

@@ -24,10 +24,8 @@
 
     font-size: 30px;
 
-    @media (min-width: 1200px) {
-      &:hover {
-        background-color: $nearly-black;
-      }
+    &:hover {
+      background-color: $nearly-black;
     }
   }
 

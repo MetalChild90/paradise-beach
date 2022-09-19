@@ -38,7 +38,7 @@ function Slider({ dataImages, bigSlider }) {
         <Dots
           activeIndex={activeIndex}
           dataImages={dataImages}
-          onclick={(activeIndex) => setActiveIndex(activeIndex)}
+          handleClick={(activeIndex) => setActiveIndex(activeIndex)}
         />
       )}
     </div>

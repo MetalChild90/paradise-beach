@@ -17,7 +17,6 @@ function App() {
 
   const handleScroll = useCallback(() => {
     const position = window.pageYOffset;
-
     if (position >= firstSectionOffset / 2) {
       setIsScrolled(true);
     } else {

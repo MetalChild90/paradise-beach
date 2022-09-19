@@ -4,7 +4,7 @@ import islandImage from "../../assets/kliffs.png";
 // Video by Mikhail Nilov: https://www.pexels.com/video/drone-footage-of-rock-formations-in-the-shore-8357346/
 import Loader from "../Loader";
 
-export default function BgVideo() {
+const BgVideo = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [activePlay, setActivePlay] = useState(true);
 
@@ -59,4 +59,6 @@ export default function BgVideo() {
       {!videoLoaded && <Loader />}
     </>
   );
-}
+};
+
+export default BgVideo;

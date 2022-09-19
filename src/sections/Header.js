@@ -4,6 +4,7 @@ import $ from "jquery";
 
 function Header({ fsOffset, isScrolled }) {
   function transition() {
+    console.log("work");
     $("html, body").animate(
       {
         scrollTop: fsOffset,

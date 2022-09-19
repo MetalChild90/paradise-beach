@@ -1,17 +1,20 @@
 import Slider from "./Slider";
 
-function MiniSliderSection({ images, apartment }) {
+function MiniSliderSection({
+  images,
+  apartment: { name, description, features, reverse },
+}) {
   return (
     <div
       className="miniSliderSection"
-      style={{ flexDirection: apartment.reverse ? "row-reverse" : "row" }}
+      style={{ flexDirection: reverse ? "row-reverse" : "row" }}
     >
       <Slider bigSlider={false} dataImages={images} />
       <div className="infoBox">
-        <h3>{apartment.name}</h3>
-        <p>{apartment.description}</p>
+        <h3>{name}</h3>
+        <p>{description}</p>
         <ul>
-          {apartment.features.map((item, i) => (
+          {features.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
         </ul>
